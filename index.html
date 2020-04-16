@@ -9,22 +9,11 @@
 <body>
     <div id="app">
         <p>
-            <input type="text" v-on:input="changeValue">
+            <h1 v-once>{{text}} -v-once</h1>
+            <input type="text" v-on:input="changeValue"  v-bind:value="input">
             {{text}}
         </p>
     </div>
-    <script>
-        new Vue({
-            el: '#app',
-            data: {
-                text : 'hello World!'
-            },
-            methods: {
-                changeValue: function(event) {
-                    this.text = event.target.value;
-                }
-            }
-        });
-    </script>
+    <script src="main.js"></script>
 </body>
 </html>
