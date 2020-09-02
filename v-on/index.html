@@ -10,14 +10,26 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../node_modules/font-awesome/css/font-awesome.min.css">
-
 </head>
 
 <body>
     <div class="container">
         <div id="app">
-            <h1 class="display-1"> <a href="/" class="small" title="home"><i class="fa fa-arrow-left " aria-hidden="true"></i></a>From Template</h1>
+            <h1 class="display-1">
+                <a href="/" class="small" title="home"><i class="fa fa-arrow-left " aria-hidden="true"></i></a>v-on
+            </h1>
             <hr>
+
+            <div class="container-fluid">
+                <button class="btn btn-primary" v-on:click="increment">total clicks : {{count}}</button>
+                <p></p>
+                <h3>
+                    <p v-on:mouseMove="trackMovement">
+                        Paragraph tag with mouse move, Mouse over to see the offset
+                    </p>
+                </h3>
+                <label>X: {{coOrdinates.x}}, y: {{coOrdinates.y}}</label>
+            </div>
         </div>
     </div>
     <script src="../node_modules/vue/dist/vue.min.js"></script>
