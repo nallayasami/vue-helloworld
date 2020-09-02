@@ -1,8 +1,7 @@
 new Vue({
     el: '#app',
     data: {
-        text : 'hello World!',
-        input: 'v-model example text'
+        outputLink: '<p><a href="/">Link from a property using v-html-> Home</a></p>'
     },
     methods: {
         changeValue: function($event) {

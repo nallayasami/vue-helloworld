@@ -2,7 +2,7 @@ new Vue({
     el: '#app',
     data: {
         text : 'hello World!',
-        input: 'v-model example text'
+        input: 'v-bind example text'
     },
     methods: {
         changeValue: function($event) {

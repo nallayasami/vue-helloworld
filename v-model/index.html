@@ -1,19 +1,29 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="../node_modules/vue/dist/vue.js" ></script>
-</head>
-<body>
-    <div id="app">
-        <p>
-            <h1 v-once>{{text}} -v-once</h1>
-            <input type="text" @input="text=input"  v-model="input">
-            {{text}}
-        </p>
-    </div>
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+  </head>
+  <body>
+      <div class="container">          
+          <div id="app">
+              <p>
+                  <h1 class="display-1">V-model</h1>
+                  <input type="text" @input="text=input"  v-model="input">
+                  <label>{{text}}</label>
+              </p>
+          </div>
+      </div>
+
+    <script src="../node_modules/vue/dist/vue.min.js"></script>
     <script src="main.js"></script>
+    
+    <script src="../node_modules/jquery/dist/jquery.slim.min.js" ></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js" ></script>
 </body>
 </html>
